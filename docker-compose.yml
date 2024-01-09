@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    image: uj5ghare/mario:80
+    environment:
+      NAME: SUPER-MARIO
+      PORT: 80
+    volumes:
+      - /var/log/mario-log:/var/log/nginx
+    ports:
+      - "80:80"
